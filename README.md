@@ -25,5 +25,3 @@ This project displays the current time in real-time and allows users to:
 
 ---
 
-## Project Structure
-
