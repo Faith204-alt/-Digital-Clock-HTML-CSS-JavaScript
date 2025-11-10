@@ -1,0 +1,150 @@
+/* Basic reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #0f1724;
+    --card: #071029;
+    --accent: #06b6d4;
+    --muted: #9aa7b2;
+    --glass: rgba(255, 255, 255, 0.03);
+    --radius: 12px;
+    --gap: 12px;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+html,
+body {
+    height: 100%;
+    background: linear-gradient(180deg, #071022 0%, #09162a 100%);
+    color: #e6eef3;
+}
+
+/* App centering */
+.app {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+/* Card */
+.clock-card {
+    width: 100%;
+    max-width: 440px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border-radius: var(--radius);
+    padding: 22px;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
+    text-align: center;
+}
+
+/* Clock display */
+.clock-display {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    user-select: none;
+}
+
+.clock-display span {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Big numbers */
+#hours,
+#minutes,
+#seconds {
+    font-size: clamp(40px, 9vw, 88px);
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: var(--glass);
+    min-width: 1ch;
+}
+
+/* separators and small am/pm */
+.sep {
+    opacity: 0.9;
+    font-size: clamp(40px, 9vw, 88px);
+    color: var(--muted);
+    padding: 0 4px;
+}
+
+.ampm {
+    font-size: 14px;
+    margin-left: 6px;
+    color: var(--muted);
+    align-self: end;
+    padding-bottom: 8px;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    gap: var(--gap);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.ctrl {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: inherit;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.ctrl-inline {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* status & footer */
+.status {
+    color: var(--muted);
+    font-size: 13px;
+    height: 20px;
+    margin-bottom: 6px;
+}
+
+.meta {
+    text-align: center;
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* accessibility helper */
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    border: 0;
+    padding: 0;
+    margin: -1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
