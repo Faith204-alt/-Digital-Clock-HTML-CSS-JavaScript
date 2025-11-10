@@ -1,4 +1,4 @@
-# 🕒 Digital Clock — HTML, CSS, JavaScript
+# 🕒 Digital Clock - HTML, CSS, JavaScript
 
 A responsive digital clock built with **HTML**, **CSS**, and **JavaScript**.  
 This project displays the current time in real-time and allows users to:
@@ -9,7 +9,7 @@ This project displays the current time in real-time and allows users to:
 
 ---
 
-## 🚀 Features
+## Features
 - Real-time updating clock  
 - Fully responsive and mobile-friendly  
 - User-friendly buttons for customization  
@@ -18,11 +18,12 @@ This project displays the current time in real-time and allows users to:
 
 ---
 
-## 🧠 Technologies Used
+## Technologies Used
 - **HTML5** – Structure and accessibility  
 - **CSS3** – Styling and responsiveness  
 - **JavaScript (ES6)** – Logic and interactivity  
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
+
